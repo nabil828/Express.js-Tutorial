@@ -4,7 +4,7 @@ Express.js is a Node.js framework that we will use to build the server app. It i
 
 > Fast, unopinionated, minimalist web framework for Node.js
 
-## - [Express.js Tutorial](#expressjs-tutorial)
+## Table of Contents
 
 - [Installation](#installation)
 - [Hello World Example](#hello-world-example)
@@ -14,11 +14,8 @@ Express.js is a Node.js framework that we will use to build the server app. It i
 - [Handling Request Data - `req.params`](#handling-request-data----reqparams-)
 - [Express.js Response Methods](#expressjs-response-methods)
 - [Detour: Find, Filter, Map, and Reduce Functions](#detour--find--filter--map--and-reduce-functions)
-
-* [Express.js Middleware](#expressjs-middleware)
-* [Express.js Sessions](#expressjs-sessions)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+- [Express.js Middleware](#expressjs-middleware)
+- [Express.js Sessions](#expressjs-sessions)
 
 ## Installation
 
