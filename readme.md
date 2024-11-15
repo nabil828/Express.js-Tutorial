@@ -545,12 +545,12 @@ And don't forget to install the `express-session` package:
 npm install express-session
 ```
 
-Now if the admin tried to login, the server will store the username in the session and redirect the admin to the profile page. The profile page will display the username stored in the session. The session data is stored on the server, and the session ID is sent to the client in a cookie. The client sends the session ID in subsequent requests, and the server uses the session ID to retrieve the session data. Sessions are used to store user data during the user's session. You can store user data such as the username, email, role, and preferences in the session. Sessions are useful for creating personalized user experiences and maintaining user data during the user's session. Sessions data are not shared between different users. Each user has a unique session ID and session data.
+Now if the admin tried to login, the server will store the username in the session and redirect the admin to the profile page. The profile page will display the username stored in the session. The session data is stored on the server, and the session ID is sent to the client in a cookie. The client sends the session ID in subsequent requests, and the server uses the session ID to retrieve the session data. Sessions are used to store user data during the user's session. You can store user data such as the username, email, role, and preferences in the session. Sessions are useful for creating personalized user experiences and maintaining user data during the user's session. Sessions data are not shared between different users. Each user has a unique session ID and session data.  
 ![alt text](images/image-7.png)
 
 Notice in the above images, that a a non-admin tried to access the profile page after the admin had already logged in in another session window. The server will not display the username of the admin in the profile page of the non-admin. This is because the session data is stored on the server and is not shared between different users. Each user has a unique session ID and session data.
 
-Here is `console.log` output of these two sessions:
+Here is `console.log` output of these two sessions:  
 ![alt text](images/image-8.png)
 
 You can also verify these ids on the client side by opening the browsers developer tools and checking the cookies section. You will see that each session has a unique session ID and the IDs are matching the IDs printed in the console. Also, You can check the network tab to verify that cookies are sent in the request headers for each request from the client to the server.
