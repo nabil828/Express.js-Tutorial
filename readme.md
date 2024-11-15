@@ -555,4 +555,12 @@ Here is `console.log` output of these two sessions:
 
 You can also verify these ids on the client side by opening the browsers developer tools and checking the cookies section. You will see that each session has a unique session ID and the IDs are matching the IDs printed in the console. Also, You can check the network tab to verify that cookies are sent in the request headers for each request from the client to the server.
 
+<details>
+<summary>`express.urlencoded` Middleware</summary>
+The `express.urlencoded` middleware is used to parse the request body as URL-encoded data. The `express.json` middleware is used to parse the request body as JSON. You can use the `express.urlencoded` middleware to parse form data sent by the client. To use the `express.urlencoded` middleware, you can add the following line of code:
+```javascript
+app.use(express.urlencoded({ extended: true }));
+```
+</details>
+
 Phew! This is it for now. Next week we will build apps using Express.js 🚀!
